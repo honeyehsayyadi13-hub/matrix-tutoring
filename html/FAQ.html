@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--FAQ page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Frequently Asked Questions">
+    <meta name="keywords" content="questions, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>FAQ</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--style sheet geared towards the about us page but used for faq as well-->
+    <link rel="stylesheet" href="../css/about.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../html/website_map.html">Map</a>
+        <a href="../html/FAQ.html">FAQ</a>
+        <!--drop down menu triggered when hovered on which lists all the services offered-->
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="../php/english_page.php">English</a></li>
+                <li><a href="../php/french_page.php">French</a></li>
+                <li><a href="../php/science_page.php">Biology/Chemistry/Physics</a></li>
+                <li><a href="../php/reading_writing_page.php">Reading & Writing</a></li>
+                <li><a href="../php/math_page.php">Math</a></li>
+                <li><a href="../php/coding_page.php">Coding</a></li>
+                <li><a href="../php/robotics_page.php">Robotics</a></li>
+                <li><a href="../php/history_page.php">History</a></li>
+                <li><a href="../php/geography_page.php">Geography</a></li>
+                <li><a href="../php/exam_test_page.php">Exam Preparation & Test Preparation</a></li>
+                <li><a href="../php/homework_page.php">Homework Help</a></li>
+                <li><a href="../php/essay_page.php">Essay Writing</a></li>
+                <li><a href="../php/summer_learning_page.php">Summer Learning Plan</a></li>
+                <li><a href="../php/college_university_page.php">College & University Preparation</a></li>
+                <li><a href="../php/learning_page.php">Learning and Studying Coaching</a></li>
+                <li><a href="../php/STEM_page.php">STEM Program</a></li>
+            </ul>
+        </div>
+        <!--php form pages and sign up/log in-->
+        <a href="../php/job_page.php">Apply Now</a>
+        <a href="../php/company_login.php">Company Account</a>
+        <a href="../php/register.php">Sign Up/Log In</a>
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <br><br>
+    <!--page heading-->
+    <h1 class="centre-txt-main">
+        Frequently Asked Questions
+    </h1>
+    <!--subheading-->
+    <h2 class="centre-txt">
+        If you have any questions, please refer to our email to ask.
+    </h2>
+    <br><br>
+    <!--text block that lists all frequently asked questions-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <p class="form-title-left">How can I book a consultation and what is the proccess?</p>
+            <p class="rect-text">You can click <a href="index.html#consult">here</a> to book a consultation. Once
+                submitted, a response via email will be sent about scheduling a free assessment.</p>
+            <p class="form-title-left">Are online sessions available?</p>
+            <p class="rect-text">We are able to offer online synchronous tutoring for students who prefer learning
+                online. More information can be found if asked about this through our email.</p>
+            <p class="form-title-left">What grade levels and subjects do you offer to support?</p>
+            <p class="rect-text">Matrix tutoring is able to support students from grade 1 to 12 in almost all subject
+                areas and help with homework, projects, assignments, and exam prep for students in secondary school.</p>
+            <p class="form-title-left">What are the tutoring rates?</p>
+            <p class="rect-text">The rates are discussed either in person or on email. It is determined by your child's
+                learning plan.</p>
+        </div>
+    </div>
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

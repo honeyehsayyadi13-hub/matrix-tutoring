@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--home page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site Index">
+    <meta name="keywords" content="index, homepage">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>index</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../html/website_map.html">Map</a>
+        <a href="../html/FAQ.html">FAQ</a>
+        <!--drop down menu triggered when hovered on which lists all the services offered-->
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="../php/english_page.php">English</a></li>
+                <li><a href="../php/french_page.php">French</a></li>
+                <li><a href="../php/science_page.php">Biology/Chemistry/Physics</a></li>
+                <li><a href="../php/reading_writing_page.php">Reading & Writing</a></li>
+                <li><a href="../php/math_page.php">Math</a></li>
+                <li><a href="../php/coding_page.php">Coding</a></li>
+                <li><a href="../php/robotics_page.php">Robotics</a></li>
+                <li><a href="../php/history_page.php">History</a></li>
+                <li><a href="../php/geography_page.php">Geography</a></li>
+                <li><a href="../php/exam_test_page.php">Exam Preparation & Test Preparation</a></li>
+                <li><a href="../php/homework_page.php">Homework Help</a></li>
+                <li><a href="../php/essay_page.php">Essay Writing</a></li>
+                <li><a href="../php/summer_learning_page.php">Summer Learning Plan</a></li>
+                <li><a href="../php/college_university_page.php">College & University Preparation</a></li>
+                <li><a href="../php/learning_page.php">Learning and Studying Coaching</a></li>
+                <li><a href="../php/STEM_page.php">STEM Program</a></li>
+            </ul>
+        </div>
+        <!--php form pages and sign up/log in-->
+        <a href="../php/job_page.php">Apply Now</a>
+        <a href="../php/company_login.php">Company Account</a>
+        <a href="../php/register.php">Sign Up/Log In</a>
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--a click sound will play when the button is clicked, this is triggered by the playClickSound() function found in in java_work.js-->
+    <audio id="clickSound" src="../aud/click_1.mp3" preload="auto"></audio>
+
+    
+    <!--company logo-->
+    <div class="img-flex">
+        <img src="../img/logo.svg" id="main-img" alt="company logo">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Tutoring that accommodates for your child's needs
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>At Matrix Tutoring we prioritize what your child needs to learn and grow into a successful scholar </p>
+    </div>
+    <!--button that plays a sound and sends user for registration to complete a form to get a consultation-->
+    <a href="../php/register.php.php" class="my-button" onclick="playClickSound()">
+        Sign Up to Book a Free Consultation
+    </a>
+    <br><br><br><br><br>
+    <!--heading-->
+    <div class="centre-txt-main">
+        How it Works
+    </div>
+    <br><br><br><br>
+    <!--explanation of the process including titles, descriptions, and images-->
+    <div class="texty-contain">
+        <div class="step">
+            <img src="../img/1.svg" alt="one">
+            <div class="centre-txt-med">Free Assessments</div>
+            <div class="box">Students will be assessed to see where they excel and where they need improvements.</div>
+        </div>
+
+        <div class="step">
+            <img src="../img/2.svg" alt="two">
+            <div class="centre-txt-med">Get Feedback</div>
+            <div class="box">A plan of what should be worked on will be sent days after the assessment.</div>
+        </div>
+
+        <div class="step">
+            <img src="../img/3.svg" alt="three">
+            <div class="centre-txt-med">Start Sessions</div>
+            <div class="box">If everything is satisfactory then registration can be completed and the student can begin
+                as soon as possible.</div>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <!--heading-->
+    <div class="centre-txt-main">
+        Offerings
+    </div>
+    <br>
+    <!--sample of what services are offered in sticky note boxes, they are placed in rows-->
+    <div class="centre-txt">
+        Here is a sample of what we offer, please refer to our "About Us" section for our complete list of offerings
+        including the style of tutoring we have available.
+    </div>
+    <br><br>
+    <div class="sticky-contain">
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">ENGLISH</p>
+                <img id="eng" src="../img/stylus.svg" alt="stylus">
+                <p class="sticky-subhead">Students are taught both reading and writing in English. All grade levels are
+                    permitted to bring in their own work to have reviewed and improved upon by tutors. Targeted towards
+                    young children who need their reading and writing skills improved upon.</p>
+            </div>
+        </div>
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">SCIENCE</p>
+                <img id="stem" src="../img/stem.svg" alt="science">
+                <p class="sticky-subhead">Tutors who specialize in fields such as biology, chemistry, and physics
+                    support students in these areas. Students in high school can get the necessary help such as exam and
+                    test preparation
+                    to pass courses with successful results. </p>
+            </div>
+        </div>
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">FRENCH</p>
+                <img id="fr" src="../img/fr.svg" alt="french">
+                <p class="sticky-subhead">Students who need assistance in French can be guided by French tutors who
+                    support all subjects in the language. Altered to each grade level.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="sticky-contain">
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">HOMEWORK</p>
+                <img id="book" src="../img/book.svg" alt="homework">
+                <p class="sticky-subhead">Geared towards students who need support with their homework, assignments, or
+                    test preparations. Students are encouraged to bring class material to complete their work while
+                    tutors help them create above satisfactory work.</p>
+            </div>
+        </div>
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">MATH</p>
+                <img id="math" src="../img/superscript.svg" alt="math">
+                <p class="sticky-subhead">Aimed towards students of all grade levels. Those enrolled will improve upon
+                    their skills and gain the confidence needed to perform well on their assessments. High school
+                    students
+                    can be taught by tutors who specialize in mathematics.</p>
+            </div>
+        </div>
+        <div class="post-contain">
+            <div class="tape"></div>
+            <div class="sticky">
+                <p class="sticky-text" style="font-weight:bold;">CODING</p>
+                <img id="code" src="../img/code.svg" alt="code">
+                <p class="sticky-subhead">Students who are looking for assistance in learning a new skill are paired
+                    with expert tutors and guided through sessions that enable students to learn the basics of coding
+                    languages.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!--heading-->
+    <div class="centre-txt-main">
+        Why Choose Us
+    </div>
+    <!--stacked on one another type boxes where they each have a title, an image, and a description about what the company has to offer-->
+    <div class="vert-box">
+        <div class="left-text-row">
+            <img src="../img/check.svg" alt="checkmark" width="40px">
+            <p class="left-text">Expert Experience</p>
+        </div>
+        <p class="left-sub-text">Tutors at Matrix Tutoring have years of experience and hold degrees in their respective
+            fields, ensuring
+            expert support in all subjects offered.</p>
+    </div>
+    <div class="vert-box">
+        <div class="left-text-row">
+            <img src="../img/check.svg" alt="checkmark" width="40px">
+            <p class="left-text">Small Groups</p>
+        </div>
+        <p class="left-sub-text">Sessions can either be 1-on-1 if needed or by default be in a group session with a
+            maximum of 3 students per
+            tutor.</p>
+    </div>
+    <div class="vert-box">
+        <div class="left-text-row">
+            <img src="../img/check.svg" alt="checkmark" width="40px">
+            <p class="left-text">Based on the Curriculum</p>
+        </div>
+        <p class="left-sub-text">The material taught at Matrix Tutoring is tailored to relevant matters being taught in
+            schools, customized to
+            the student's plan.</p>
+    </div>
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+</body>
+
+
+</html>

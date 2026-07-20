@@ -1,0 +1,223 @@
+/*css pastel template**/
+
+/*background colour**/
+body {
+    background: rgb(220, 205, 233);
+    color: rgb(118, 167, 230);
+}
+
+/*heading text colour**/
+.centre-txt-main {
+    color: white;
+}
+
+/*subheading text colour, translucent**/
+.centre-txt {
+    color: rgb(255 255 255 / 70%);
+}
+
+/*smaller centre text colour**/
+.centre-txt-med {
+    color: rgb(255, 255, 255);
+}
+
+/*smallest centre text colour, translucent**/
+.centre-txt-small {
+    color: rgb(255 255 255 / 70%);
+}
+
+
+/*text colour for boxes, translucent**/
+.box {
+    color: rgb(255 255 255 / 70%);
+}
+
+/*sticky tape colour, translucent**/
+.tape {
+    background-color: rgba(74, 103, 215, 0.534);
+}
+
+/*sticky note rectangle colour with shadow colour**/
+.sticky {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(183, 166, 198, 0.5);
+
+}
+
+/*sticky note title text colour**/
+.sticky-text {
+    color: rgb(118, 167, 230);
+}
+
+/*sticky note subheading text colour**/
+.sticky-subhead {
+    color: black;
+}
+
+/*left title text colour**/
+.left-text {
+    color: white;
+}
+
+/*left subheading text**/
+.left-sub-text {
+    color: rgb(255 255 255 / 50%);
+}
+
+/*form rectangle colour, with box shadow colour**/
+.form-rect {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(183, 166, 198, 0.5);
+
+}
+
+/*form title colour**/
+.form-title {
+    color: rgb(17, 13, 63);
+}
+
+/*form left text colour**/
+.form-title-left {
+    color: rgb(17, 13, 63);
+}
+
+/*form text colour**/
+.form-text {
+    color: rgb(17, 13, 63, 0.5);
+}
+
+/*footer text colour**/
+footer p {
+    color: rgb(0, 0, 0);
+}
+
+/*dropdown customization that includes border, background, and text colour**/
+select {
+    border: 2px solid rgb(255, 252, 190);
+    background-color: #f9f9f9;
+    color: rgb(17, 13, 63, 0.5);
+}
+
+/*button colour**/
+.my-button {
+    background-color: rgb(109, 145, 73);
+    color: white;
+}
+
+/*hover colour for button**/
+.my-button:hover {
+    background-color: rgb(57, 107, 67);
+}
+
+/*navigation bar colour, translucent**/
+#navbar {
+    background-color: rgba(140, 167, 218, 0.5);
+}
+
+/*navigation bar text colour**/
+#navbar a {
+    color: white;
+}
+
+/*adds colour for elements inside the text-color area**/
+.text-color,
+.text-color li,
+.text-color,
+ul {
+    color: rgb(17, 13, 63);
+}
+
+/*form message box colour**/
+.form-msg-box {
+    border: 1px solid #ccc;
+}
+
+/*form input colour**/
+.form-rect input {
+    border: 1px solid #ccc;
+}
+
+
+/*video border and shadow colour, translucent**/
+video {
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*rectangle colour with shadow**/
+.rect {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*contact information text colour, translucent**/
+.contact-info {
+    color: rgb(255, 255, 255, 0.7);
+}
+
+/*adds a line that is translucent to break each piece of information into their own section stacked on one another**/
+.contact-info p {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+}
+
+/*contact information link colour customization**/
+.contact-info a {
+    color: rgb(255, 255, 255);
+}
+
+/*rectangle box text colour**/
+.rect-text {
+    color: rgb(17, 13, 63);
+}
+
+/*navigation bar button colour**/
+#navbar button {
+    background-color: rgb(109, 145, 73);
+    color: white;
+}
+
+/*dropdown menu background colour**/
+.dropdown-content {
+    background-color: rgb(194, 166, 228);
+}
+
+/*dropdown menu text colour**/
+#navbar .dropdown-content li a {
+    color: rgb(245, 245, 245);
+}
+
+/*customizing the dropdown background and text color when hovering on the links**/
+#navbar .dropdown-content li a:hover {
+    background-color: rgb(109, 133, 216);
+    color: white;
+}
+
+/*changing background colour for tables**/
+.table-customization {
+    background-color: white;
+}
+
+/*table heading text colour and cell colour changed**/
+.table-customization th {
+    background-color: rgb(124, 153, 227);
+    color: white;
+}
+
+/*table subheading and cell colour changed**/
+.table-customization td {
+    background-color: white;
+    color: rgb(89, 82, 169);
+    border: 1px solid #ccc;
+}
+
+/*log in rectangle colour customized here**/
+.login-rect {
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*small text colour**/
+.small-text {
+    color: black;
+}

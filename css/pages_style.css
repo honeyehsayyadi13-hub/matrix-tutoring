@@ -1,0 +1,508 @@
+/* general css styling for all pages, mostly geared towards the index page**/
+*{
+    box-sizing:border-box;
+}
+/*chosen font for pages**/
+body{
+    font-family: Corbel;
+    padding-top: 60px;
+}
+
+/*used to fix the navigation bar to fit the top of the page as well as fix the background**/
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+/*fixing the background to fit the screen and not repeat and stay while scrolling**/
+.background-look{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*flexbox for images**/
+.img-flex{
+    display: flex;
+    justify-content: center;
+}
+
+/*rounding image corners**/
+img{
+    border-radius: 15px;
+}
+
+/*flex box for heading texts with font customization**/
+.centre-txt-main{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    font-size:50px;
+    font-family: Arial Rounded MT;
+    font-weight: bold;
+}
+
+/*flex box for subheading texts with font customization**/
+.centre-txt{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    font-size:30px;
+}
+
+/*different font chosen for this text and margin**/
+.centre-txt-med{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left:15px;
+}
+
+/*smaller text size flex box**/
+.centre-txt-small{
+    display:flex;
+    font-size:20px;
+}
+
+/*word flexbox**/
+.word-contain {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*container for text where text is centred and width is fixed**/
+.box {
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*controling the layout of multiple boxes**/
+.texty-contain{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+/*vertically stacked content with centred text**/
+.step{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*customizing the layout for the sticky notes**/
+.sticky-contain {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*flex box for individual sticky notes**/
+.post-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+/*the sticky note tape lays on top of the notes**/
+.tape {
+    height: 30px;
+    width: 100px;
+    margin-bottom: -15px;
+    z-index: 1;
+    
+}
+
+/*sticky note box lays beneath**/
+.sticky {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+/*sticky note text for titles**/
+.sticky-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left:15px;
+}
+
+/*images inside the notes are moved here**/
+.sticky img{
+    display:block;
+    width:80%;
+    max-width:20px;
+    height:auto;
+    margin:15px auto;
+}
+
+/*sticky note small text here**/
+.sticky-subhead{
+    font-size:20px;
+    margin-left:15px;
+    text-align:left;
+}
+
+/*flex box for the column text**/
+.vert-box{
+    width:100%;
+    max-width:400px;
+    margin:0 auto 30px auto;
+    text-align:left;
+}
+
+/*text appears from the left**/
+.left-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:26px;
+}
+
+/*font size is changed for the smaller text**/
+.left-sub-text{
+    width:100%;
+    margin:0;
+    text-align:left;
+}
+
+/*form application/consultation flexbox made**/
+.form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+/*the rectangle for the forms are made here**/
+.form-rect{
+    width:90%;
+    max-width:650px;
+    padding:25px;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+
+/*customization of form input**/
+.form-rect input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/*form text title customization**/
+.form-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align:center;
+}
+
+/*regular form text positioning**/
+form{
+    text-align: center;
+}
+
+/*form titles that must be placed on the left customized here**/
+.form-title-left{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align:left;
+}
+
+/*form text font size**/
+.form-text{
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*form message box sizing and positioning**/
+.form-msg-box{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none;
+}
+
+/*footer flexbox with the content placed horizontally and aligns items vertically**/
+footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*customization of the select dropdowns**/
+select{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/*customization of the button created, font, positioning, sizing created here**/
+.my-button{
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: Corbel;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    width: 300px;
+}
+
+/*customization for when hovering over the button**/
+.my-button:hover{
+    transform: scale(1.05);
+}
+/*pushes the menu down so it appears below the navagation bar**/
+.dropdown-content{
+    top:50px;
+}
+
+/*navigation bar placement**/
+#navbar{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    min-height:60px;
+
+    z-index:9999;
+
+    display:flex;
+    flex-wrap:wrap;/*for smaller screens to wrap onto**/
+    justify-content:center;
+    align-items:center;
+
+    padding:5px;
+}
+
+
+
+/*navigation bar link customization**/
+#navbar a{
+    padding:8px;
+    font-size:14px;
+}
+
+
+/*buttons placed in the navigation bar are fixed here**/
+#navbar button{
+    border:none;
+    padding:15px 25px;
+    font-size:18px;
+    font-family:Corbel;
+    border-radius:12px;
+    cursor:pointer;
+    height:60px;
+    margin:5px;
+}
+
+/*sets the size of the logo for the navigation bar**/
+#logo{
+    width:40px;
+}
+/*sets the size of main images**/
+#main-img{
+    width:100%;
+    max-width:1000px;
+    height:auto;
+}
+/*sets the size of smaller images**/
+#small-img{
+    width:50%;
+    max-width:1000px;
+    height:auto;
+}
+
+/*controls the positioning of dropdown menus**/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/*drop down menu customization**/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    z-index: 1000;
+}
+
+/*drop down list placement**/
+.dropdown-content li{
+    display: block;
+    width: 100%;
+}
+
+/*makes the drop down content show**/
+.dropdown-content li a{
+    display: block;
+    padding: 10px;
+}
+
+/*hovering effect for the drop down menu**/
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*links do not have their underline and colour change for the drop down menu**/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*puts an imae and text side by side in a row**/
+.left-text-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+}
+
+.left-sub-text{
+    width:90%;
+    margin-left:0;
+    text-align:left;
+}
+/*keeps the button text centred**/
+.my-button{
+    text-align:center;
+    white-space:normal;
+}
+
+.left-text,
+.left-sub-text{
+    margin:0;
+}
+
+/*star positioning**/
+.star{
+    display: inline-block;
+}
+
+/*star image sizing**/
+.star img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/*mobile styling for screens 768px wide or smaller, adapted for the iPhone 14 Pro Max dimensions**/
+@media screen and (max-width:768px){
+/*adds tob spacing for phone users**/
+body{
+    padding-top:70px;
+}
+
+/*keeps the navigation bar fixed to the top of the screen for mobile users**/
+#navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+/*creates single column with things being centred for mobile devices**/
+.texty-contain,
+.sticky-contain,
+.word-contain{
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+/*resizing for mobile devices**/
+.step{
+    width:90%;
+    max-width:350px;
+}
+
+/*resizing sticky note container for mobile devices**/
+.post-contain{
+    width:90%;
+}
+
+/*enables the sticky notes to not be fixed sizes**/
+.sticky{
+    width:100%;
+    min-height:350px;
+    height:auto;
+}
+
+/*resizes the images inside the sticky notes for mobile users**/
+.sticky img{
+    width:80%;
+    height:auto;
+    margin:15px auto;
+}
+
+/*stacks and centres the boxes vertically for mobile**/
+.vert-box{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    width:90%;
+    max-width:400px;
+
+    margin:0 auto 30px auto;
+}
+
+.left-text{
+    font-size:26px;
+}
+
+
+.left-sub-text{
+    font-size:18px;
+}
+/*keeps the icon and text row aligned when someone is on a mobile device**/
+.left-text-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin-left:0;
+}
+/*enables the form rectangle to resize automatically on a phone**/
+.form-rect{
+    max-width:650px;
+    width:90%;
+    height:auto;
+    border-radius: 10px;
+}
+
+/*resizes the button and allows the height to adjust to fit wrapped text on a mobile device**/
+.my-button{
+    width:90%;
+    max-width:300px;
+    height:auto;
+    min-height:60px;
+    padding:15px;
+}
+
+}

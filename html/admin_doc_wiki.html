@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page and documentation page 5-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin Documentation Logging In and Navigation">
+    <meta name="keywords" content="documentation, description, guide, information, admin, logging in, navigation">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>Admin Log In and Navigation</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Admin Login and Navigation
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>A guide for logging in as admin</p>
+    </div>
+    <!--step-by-step how to guide for logging into an admin account and navigation-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ol>
+                <li>Open the Matrix Tutoring homepage, or <a href="../html/index.html">click here.</a></li>
+                <br>
+                <li>Use the navigation bar to find the following: "Company Account", or <a href="../php/company_login.php">click here.</a></li>
+                <br>
+                <li>Fill in the following to log into an admin account: username, and password (the only way company accounts can be made is through the database for security reasons).</li>
+                <br>
+                <li>When done filling out the form, select the "Log In" button.</li>
+                <br>
+                <li>After a successful log in, the user will be sent to the company home page where they can navigate the following through the navigation bar: home, job applications, consultation requests, monitoring, ratings, student progress, manage users, or change themes.</li>
+            </ol>
+            </div>
+        
+        </div>
+    </div>
+    <!--guide aimed for navigating through the admin side of the website-->
+    <div class="centre-txt">
+        <p>A guide for admin navigation</p>
+    </div>
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ol>
+                <li>After logging in, the user is sent to the home page with a navigation bar.</li>
+                <br>
+                <li>The home page enables users to either log out or add a students name, a subject, and what they did that day. This information can be saved by pressing the "Save Progress" button. To access this information, click the "student progress" link in the navigation bar.</li>
+                <br>
+                <li>When selecting "Job Applications", users are sent to a page where they can see a table with every person who submitted a job application and the information they filled out as well.</li>
+                <br>
+                <li>If "Consultation Requests" is chosen, users are sent to a page with a table of every consultation request made along with the according information. From here, users can delete these requests.</li>
+                <br>
+                <li>In the navigation bar, if "Monitoring" is selected, the user can see monitoring information.</li>
+                <br>
+                <li>If a user chooses "Ratings" in the navigation bar, they will be able to see user feedback submitted on the website and the statistics of the company's ratings.</li>
+                <br>
+                <li>When selecting "Student Progress", users can see what information has been created about students.</li>
+                <br>
+                <li>The "Manage Users" link in the navigation bar enables admin to get a table of the users on the website and see the status of their account. From here, admin can disable accounts.</li>
+                <br>
+                <li>The "Manage Services" option in the navigation bar allows the admin to see what services are offered in the database. When clicking the "Edit" link, users are taken to a page where they can change the names to replace what is offered and this will be saved and updated automatically in the database.</li>
+            </ol>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+    <!--button to take to the next guide-->
+    <a href="../html/db_wiki.html" class="my-button">Next Guide</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

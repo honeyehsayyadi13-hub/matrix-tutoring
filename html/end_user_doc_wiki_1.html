@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page and documentation page 1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="End User Documentation General Navigation">
+    <meta name="keywords" content="end user, guide, documentation, description, information, general navigation">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>General Navigation</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">General Navigation / How to Get Started
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>A guide for navigating the website and accessing the available features.</p>
+    </div>
+    <!--step-by-step how to guide for using the website-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+                <ol>
+                    <li>Open the Matrix Tutoring homepage, or <a href="../html/index.html">click here.</a></li>
+                    <br>
+                    <li>Use the navigation bar to have access to the following: home page, services, contact
+                        information, website map, about us, frequently asked questions, login and registration, job
+                        application, switch themes, and company login.</li>
+                    <br>
+                    <li>To familiarize yourself with our services, head to the navigation bar and select services, a
+                        drop down of all the services offered will appear.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+    <!--button to take to the next guide-->
+    <a href="../html/end_user_doc_wiki_2.html" class="my-button">Next Guide</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

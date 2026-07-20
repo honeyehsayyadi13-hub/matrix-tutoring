@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help database page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Database Wiki Help Page">
+    <meta name="keywords" content="database, documentation, description, guide, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>Database</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Database Documentation
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>This wiki page is for documenting the database. Information is stored in the databases from the website using PHP. The database includes things such as user accounts and consultation requests.</p>
+    </div>
+    <!--documentation for the database, includes the name, a description, and the column names of what information is stored-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ul>
+                <li>Database Name: company_db</li>
+                <br>
+                <li>Connection Method: PHP Data Objects (PDO)</li>
+                <br>
+                <li>System: MySQL</li>
+                <br>
+                <li>Database Table 1: users</li>
+                <li>This table stores user accounts and admin accounts.</li>
+                <li>Columns: id, username, password, active, email</li>
+                <br>
+                <li>Database Table 2: student_progress</li>
+                <li>This table stores the progress of students for admin users.</li>
+                <li>Columns: progress_id, student_name, subject, progress_notes, session_date</li>
+                <br>
+                <li>Database Table 3: service_ratings</li>
+                <li>This table is for users to rate services on the website.</li>
+                <li>Columns: rating_id, service_name, rating, message, submission_date</li>
+                <br>
+                <li>Database Table 4: services</li>
+                <li>This table stores the offered services.</li>
+                <li>Columns: service_id, name</li>
+                <br>
+                <li>Database Table 5: requests</li>
+                <li>This table stores the information of the users who filled out a consultation request form.</li>
+                <li>Columns: request_id, student_name, parent_name, phone, email, message, status, created_at, style, subject, user_id</li>
+                <br>
+                <li>Database Table 6: job_applications</li>
+                <li>This table stores the information of users who filled out a job application form.</li>
+                <li>Columns: application_id, name, phone, email, message, resume_file, created_at</li>
+                <br>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+    <!--button to take to the next guide-->
+    <a href="../html/php_wiki.html" class="my-button">Next Guide</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

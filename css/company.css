@@ -1,0 +1,61 @@
+/*css for the company/users**/
+
+/*moves table to the middle**/
+.table-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*customizing table contents such as font**/
+.table-customization {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+/*makes the table spacing bigger**/
+.table-customization td {
+    padding: 10px;
+}
+
+/*puting the ratings in the centre and stacking them on top of each other**/
+.ratings-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/*puting the comments in the centre and stacking them on top of each other**/
+.comment-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/*mobile styling for screens 768px wide or smaller, adapted for the iPhone 14 Pro Max dimensions**/
+@media screen and (max-width:768px) {
+
+    .table-customization {
+        /*shrinks the table text and allows horizontal scrolling**/
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .ratings-flex,
+    .comment-flex {
+        /*narrower for phones**/
+        margin: 20px auto;
+        width: 95%;
+    }
+
+}

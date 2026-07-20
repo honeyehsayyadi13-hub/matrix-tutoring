@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--website map-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website Map">
+    <meta name="keywords" content="navigation, information, map">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>map</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--style sheet geared towards the contact page but used for the website map as well-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-work">
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../html/website_map.html">Map</a>
+        <a href="../html/FAQ.html">FAQ</a>
+        <!--drop down menu triggered when hovered on which lists all the services offered-->
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="../php/english_page.php">English</a></li>
+                <li><a href="../php/french_page.php">French</a></li>
+                <li><a href="../php/science_page.php">Biology/Chemistry/Physics</a></li>
+                <li><a href="../php/reading_writing_page.php">Reading & Writing</a></li>
+                <li><a href="../php/math_page.php">Math</a></li>
+                <li><a href="../php/coding_page.php">Coding</a></li>
+                <li><a href="../php/robotics_page.php">Robotics</a></li>
+                <li><a href="../php/history_page.php">History</a></li>
+                <li><a href="../php/geography_page.php">Geography</a></li>
+                <li><a href="../php/exam_test_page.php">Exam Preparation & Test Preparation</a></li>
+                <li><a href="../php/homework_page.php">Homework Help</a></li>
+                <li><a href="../php/essay_page.php">Essay Writing</a></li>
+                <li><a href="../php/summer_learning_page.php">Summer Learning Plan</a></li>
+                <li><a href="../php/college_university_page.php">College & University Preparation</a></li>
+                <li><a href="../php/learning_page.php">Learning and Studying Coaching</a></li>
+                <li><a href="../php/STEM_page.php">STEM Program</a></li>
+            </ul>
+        </div>
+        <!--php form pages and sign up/log in-->
+        <a href="../php/job_page.php">Apply Now</a>
+        <a href="../php/company_login.php">Company Account</a>
+        <a href="../php/register.php">Sign Up/Log In</a>
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+
+    <br><br>
+    <!--heading-->
+    <h1 class="centre-txt-main">
+        Website Navigation Map
+    </h1>
+    <!--subheading-->
+    <p class="centre-txt">For Direct Access to Main Pages (not including service pages)</p>
+    <!--information of what pages are offered for users to check out before registering-->
+    <div class="contact-info">
+        <p><strong>Home Page:</strong><a href="../html/index.html" alt="home page"> Click Here</a></p>
+        <p><strong>About Us:</strong><a href="../html/about_us.html" alt="about us page"> Click Here</a></p>
+        <p><strong>Contact:</strong><a href="../html/contact.html" alt="contact page"> Click Here</a> </p>
+        <p><strong>Website Map:</strong><a href="../html/website_map.html" alt="website map page"> Click Here</a></p>
+        <p><strong>FAQ:</strong><a href="../html/FAQ.html" alt="faq page"> Click Here</a></p>
+        <p><strong>Company Log in:</strong><a href="../php/company_login.php" alt="company log in page"> Click Here</a>
+        </p>
+        <p><strong>Book Consultation:</strong><a href="../php/form.php" alt="consultation form"> Click Here</a></p>
+        <p><strong>Apply Now:</strong><a href="../php/job_page.php" alt="job application form"> Click Here</a></p>
+        <p><strong>Register/Log In:</strong><a href="../php/register.php" alt="register or log in"> Click Here</a></p>
+        <p><strong>Wiki help page/Documentation:</strong><a href="../html/wiki_help.html" alt="wiki help"> Click Here</a></p>
+    </div>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+</body>
+
+</html>

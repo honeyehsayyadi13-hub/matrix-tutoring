@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page for php-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PHP Wiki Help Page">
+    <meta name="keywords" content="PHP, documentation, description, guide, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>PHP</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">PHP Documentation
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>This wiki page is for documenting the PHP files. The PHP files are used for connecting to the database to perform the tasks that require a connection.</p>
+    </div>
+    <!--documentation for PHP-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ul>
+                <li>admin_job_page.php</li>
+                <li>This file is used to display the database of users who have completed a job application form.</li>
+                <br>
+                <li>admin_monitor.php</li>
+                <li>This file is used for the admin to monitor the databases.</li>
+                <br>
+                <li>admin_ratings.php</li>
+                <li>This file displays the ratings of the services to admin users from the database.</li>
+                <br>
+                <li>admin_requests.php</li>
+                <li>This file is used to display the database of users who have completed a consultation request form.</li>
+                <br>
+                <li>admin_services.php</li>
+                <li>This file enables admin users to edit the names of the services offered through the database.</li>
+                <br>
+                <li>admin_users.php</li>
+                <li>This file is used for admin to see the information of the users who have an account on the website through the database. Admin users can disable accounts as well.</li>
+                <br>
+                <li>Auth.php</li>
+                <li>This file is used for the sign up and log in systems. It also creates hashed passwords for security purposes.</li>
+                <br>
+                <li>coding_page.php, college_university.php, english_page.php, essay_page.php, exam_test_page.php, french_page.php, geography_page.php, history_page.php, homework_page.php, learning_page.php, math_page.php, reading_writing_page.php, robotics_page.php, science_page.php, STEM_page.php, summer_learning_page.php</li>
+                <li>These files are for users to see what services we offer including a description of each. Users can rate the service from 1 to 5 stars and include a message for feedback.</li>
+                <br>
+                <li>company_login.php</li>
+                <li>This file's purpose is to create a distinguished log in page for company users. It uses Auth.php to perform the necessary tasks for admin users to log in.</li>
+                <br>
+                <li>company_page.php</li>
+                <li>This file is used as a menu page for company users. It is created in mind for having access to pages to perform admin only actions such as disabling accounts and monitoring the databases.</li>
+                <br>
+                <li>dbcon.php</li>
+                <li>This file is used to create a PDO connection to be called upon on the PHP files that require a connection to the MySQL database.</li>
+                <br>
+                <li>delete_request.php</li>
+                <li>This file deletes consultation requests from the database. It is used in the admin_requests.php file to delete consultations.</li>
+                <br>
+                <li>edit_service.php</li>
+                <li>This file is a PHP page that enables admin users to change a name of a service. To access this page, the user must be in the admin_services.php page and select the edit option on one of the services.</li>
+                <br>
+                <li>form.php</li>
+                <li>This file is the dynamic consultation form page where users can fill out a consultation request which is sent to the admin.</li>
+                <br>
+                <li>job_page.php</li>
+                <li>This file is used as a dynamic form for users to fill out job application forms in the website. These forms are sent to the admin.</li>
+                <br>
+                <li>logout.php</li>
+                <li>This file enables users to log out of their accounts, both regular users and admin users.</li>
+                <br>
+                <li>process_job.php</li>
+                <li>This file is used to process job appliation form submissions. It also uploads the resumes to the uploads folder and stores the information into the database which in turn is displayed for admin users to see.</li>
+                <br>
+                <li>process.php</li>
+                <li>This file is used to process consultation request forms and sends the information to the database. The information can be seen from the admin side.</li>
+                <br>
+                <li>profile.php</li>
+                <li>When a user is logged into their account, they are sent to this page where they can see options as buttons to either log out or to be sent to the consultation page to fill out a consultation request form.</li>
+                <br>
+                <li>register.php</li>
+                <li>This file is a separate user account registration page and user log in page for regular users so they are separate from company users.</li>
+                <br>
+                <li>save_progress.php</li>
+                <li>This file saves the entries of the progress of students submitted by company users through the database.</li>
+                <br>
+                <li>student_progress.php</li>
+                <li>This file displays the student progress submissions made by company users on a separate page.</li>
+                <br>
+                
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+    <!--button to take to the next guide-->
+    <a href="../html/update_instructions_wiki.html" class="my-button">Next Guide</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* used for contact information display and reused for the website map**/
+/*contact info rectangle box made and moved to the centre**/
+.contact-info {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*gets rid of link underlines, used for the website map**/
+.contact-info a {
+    text-decoration: none;
+}
+/*mobile styling for screens 768px wide or smaller, adapted for the iPhone 14 Pro Max dimensions**/
+@media screen and (max-width:768px){
+
+    .contact-info{/*makes the box width and text size smaller for phones**/
+        width:90%;
+        font-size:18px;
+    }
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--front end documentation-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact the Company">
+    <meta name="keywords" content="contact, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>Front-End Documentation</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+
+    <!--heading-->
+    <h1 class="centre-txt-main">Front End Documentation
+    </h1>
+
+    <!--front end information text block-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+                <p class="form-title">Information</p>
+                <ul>
+                    <div class="text-color">
+                        <li>
+                            Overview:
+                            <ul>
+                                <li>The Matrix Tutoring website is a website that was developed using HTML5, CSS3, PHP, JavaScript, and MySQL. The frontend of the website enables users to browse through the tutoring services, create accounts, submit consultation requests, submit job applications, and view their profile. The website was designed to work on the iPhone 14 Pro Max for mobile users and the HP Pavilion 16 for desktop users.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Technologies used:
+                            <ul>
+                                <br>
+                                <li>HTML5: Creating the structure and layout for the webpages</li>
+                                <br>
+                                <li>CSS3: Styling the website.</li>
+                                  <br>
+                                <li>JavaScript: Enables the interactiveness of the website.</li>
+                                  <br>
+                                <li>PHP: Provides dynamic pages, communication with the database, and processing forms.</li>
+                                  <br>
+                                <li>MySQL: Stores user input through the forms, and accounts.</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <br>
+                    <li>Project Structure:
+                        <ul>
+                            <li>The folder structure of the project which includes the frontend. There is a home page, service catalogue, registration and login pages, user pages, and admin pages.</li>
+                            <img src="../img/folder_structure.png" id="small-img" alt="folder structure">
+                            <br>
+                        </ul>
+                    </li>
+                    <li>JavaScript Features:
+                        <ul>
+                            <li>Navigation bar</li>
+                            <li>Theme selection</li>
+                            <li>Sound effects</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>CSS:
+                        <ul>
+                            <li>Theme switching layouts</li>
+                            <li>Responsive for mobile devices</li>
+                            <li>Transitions</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Multimedia:
+                        <ul>
+                            <li>Images</li>
+                            <li>A video</li>
+                            <li>Audio</li>
+                            <li>Google Map</li>
+                            <li>Google Chart</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        Responsive Design:
+                        <ul>
+                            <li>The website uses CSS media queries to work with mobile users who are on the iPhone 14 Pro Max. The navigation, forms, images, as well as the layouts adjust themselves depending on whether the user is on desktop or on a mobile device.</li>
+                        </ul>
+                    </li>
+                    <br>
+        </div>
+    </div>
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="submitted form">
+    <meta name="keywords" content="submission, accepted, form">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>thank you</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="background-look">
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <div class="thank-you-container">
+        <!--text confirming that the user has submitted a form-->
+        <div class="centre-txt-main">
+            <h1>Thank You</h1>
+        </div>
+        <div class="centre-txt">
+            <p>Your form has been submitted successfully.</p>
+        </div>
+        <!--buttons that will take the user either back to make another form or to the index page-->
+        <div class="button-container">
+            <a href="../php/job_page.php">
+                <button class="my-button">Back to Form</button>
+            </a>
+            <br>
+            <a href="../html/index.html">
+                <button class="my-button">Home</button>
+            </a>
+        </div>
+    </div>
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+</body>
+
+</html>

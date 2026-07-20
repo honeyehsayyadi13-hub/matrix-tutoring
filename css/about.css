@@ -1,0 +1,95 @@
+/*about us page additions**/
+
+/*text that goes in the rectangle**/
+.rect-text {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*flex box to move the video to the centre**/
+.vid-contain {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+
+/*customizing the video display**/
+video {
+    border-radius: 12px;
+}
+
+/*rectangle to contain text**/
+.rect {
+    height: 1400px;
+    width: 650px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+
+/*google pie chart to fit the data visualization/graph requirement**/
+.graph-section {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+/*pie chart size**/
+#piechart {
+    width: 600px;
+    height: 400px;
+}
+
+/*mobile styling for screens 768px wide or smaller, adapted for the iPhone 14 Pro Max dimensions**/
+@media screen and (max-width:768px) {
+    .form-rect {
+        /*shrinks the form rectangle for smaller screens**/
+        width: 95%;
+        margin: auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+
+    .form-box {
+        /*centres the form box and its contents for mobile users**/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rect-text {
+        /*fixes the text for the page to fit for mobile users**/
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+        font-size: 16px;
+        overflow-wrap: break-word;
+    }
+
+    .form-title {
+        /*smaller heading size for mobile users**/
+        font-size: 24px;
+    }
+
+    video {
+        /*smaller video size for mobile users**/
+        width: 90%;
+        height: auto;
+    }
+
+    .vid-contain {
+        margin: 20px;
+    }
+
+    #piechart {
+        /*pie chart is adjusted for smaller screens**/
+        width: 100%;
+        height: 300px;
+    }
+
+
+}

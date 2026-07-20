@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--About Us page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About the Company">
+    <meta name="keywords" content="about, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>about</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--style sheet geared towards the about us page-->
+    <link rel="stylesheet" href="../css/about.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Charts library used for the pie chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        /*loading the package needed for the piechart then running the drawChart() function when its ready**/
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([['Subject', 'Students'], ['Math', 45], ['Science', 38], ['English', 52], ['French', 20], ['Coding', 30]]);
+            /*the chart displays options with a transparent background and white text so it is readable and fits with the page**/
+            var options = {
+                title: 'Students by Subject Tutoring Demand',
+                backgroundColor: 'transparent',
+                legend: { position: 'right' },
+                titleTextStyle: {
+                    color: 'white'
+                },
+                legendTextStyle: {
+                    color: 'white'
+                }
+            };
+            //pie chart is rendered
+            var chart = new google.visualization.PieChart(
+                document.getElementById('piechart')
+            );
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body class="background-look">
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../html/website_map.html">Map</a>
+        <a href="../html/FAQ.html">FAQ</a>
+        <!--drop down menu triggered when hovered on which lists all the services offered-->
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="../php/english_page.php">English</a></li>
+                <li><a href="../php/french_page.php">French</a></li>
+                <li><a href="../php/science_page.php">Biology/Chemistry/Physics</a></li>
+                <li><a href="../php/reading_writing_page.php">Reading & Writing</a></li>
+                <li><a href="../php/math_page.php">Math</a></li>
+                <li><a href="../php/coding_page.php">Coding</a></li>
+                <li><a href="../php/robotics_page.php">Robotics</a></li>
+                <li><a href="../php/history_page.php">History</a></li>
+                <li><a href="../php/geography_page.php">Geography</a></li>
+                <li><a href="../php/exam_test_page.php">Exam Preparation & Test Preparation</a></li>
+                <li><a href="../php/homework_page.php">Homework Help</a></li>
+                <li><a href="../php/essay_page.php">Essay Writing</a></li>
+                <li><a href="../php/summer_learning_page.php">Summer Learning Plan</a></li>
+                <li><a href="../php/college_university_page.php">College & University Preparation</a></li>
+                <li><a href="../php/learning_page.php">Learning and Studying Coaching</a></li>
+                <li><a href="../php/STEM_page.php">STEM Program</a></li>
+            </ul>
+        </div>
+        <!--php form pages and sign up/log in-->
+        <a href="../php/job_page.php">Apply Now</a>
+        <a href="../php/company_login.php">Company Account</a>
+        <a href="../php/register.php">Sign Up/Log In</a>
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <br><br>
+    <!--text block that contains information in three short paragraphs about the company, styled to be like a sticky note-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+                <p class="form-title">ABOUT US</p>
+                    <p class="rect-text">Matrix Tutoring is a tutoring centre that firmly believes in helping students
+                        succeed at a pace comfortable to them and with curriculum content altered to fit their needs.
+                        Each student has personalized session plans that benefits their learning to achieve academic
+                        success and strengthen their skills.</p>
+                    <p class="rect-text">With years of experience and specialization, our tutors cover a wide range of
+                        subjects. As a result, students receive focused support when tackling challenging subjects, as
+                        instructors are matched to their needs. With a strong understanding of a variety of Ontario
+                        curriculum courses due to higher education, our tutors are able to provide instructional support
+                        to elementary and secondary school students. We assist students with a variety of subjects,
+                        including STEM fields and language arts, helping them develop their confidence and improve their
+                        academic performance.</p>
+                    <p class="rect-text">Our sessions are customized to each student's needs as we believe that every
+                        child is unique, therefore their learning plans should be as well. In addition to this, we
+                        provide 1-on-1 sessions if needed as some students benefit from having full attention. Our
+                        general sessions are capped at a maximum of three students per tutor to easily monitor our
+                        students' learning.</p>
+        </div>
+    </div>
+    <!--video of students being tutored is autoplayed when the page is loaded-->
+    <div class="vid-contain">
+        <video width="400" height="240" autoplay>
+            <source src="../vid/tutoring.mp4" type="video/mp4">
+            Video of children being tutored.
+        </video>
+    </div>
+    <p class="centre-txt">Here are some of our students being tutored!</p>
+    <br><br>
+    <!--another text block in sticky note form where the services are listed in full like the drop down menu-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="rect">
+            <ul>
+                <p class="form-title">OFFERINGS</p>
+                <ul>
+                    <div class="text-color">
+                        <li>Session Styles:<!--the two options for the services-->
+                            <ul>
+                                <br>
+                                <li>In-person tutoring</li>
+                                <br>
+                                <li>Online tutoring</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <br>
+                    <li>Tutoring Assistance Offerings:<!--the twenty services offered-->
+                        <ul>
+                            <br>
+                            <li>English - General help with reading and writing.</li>
+                            <br>
+                            <li>French - General help with reading and writing.</li>
+                            <br>
+                            <li>Math - Help with topics students are struggling with or introducing new concepts to get
+                                ahead.</li>
+                            <br>
+                            <li>Physics - Geared towards high school students taking physics; includes homework help and
+                                lessons.</li>
+                            <br>
+                            <li>Chemistry - Geared towards high school students taking chemistry; includes homework help
+                                and lessons.</li>
+                            <br>
+                            <li>Biology - Geared towards high school students taking biology; includes homework help and
+                                lessons.</li>
+                            <br>
+                            <li>History - Geared towards high school students taking history; includes homework help and
+                                lessons.</li>
+                            <br>
+                            <li>Geography - Geared towards high school students taking geography; includes homework help
+                                and lessons.</li>
+                            <br>
+                            <li>Reading - Support for students struggling with reading in English or French.</li>
+                            <br>
+                            <li>Writing - Support for students looking to improve writing in English or French.</li>
+                            <br>
+                            <li>Coding - Support for high school coding courses; assistance with all programming
+                                languages, homework, and lessons.</li>
+                            <br>
+                            <li>Robotics - Designed for high school students interested in robotics and computer
+                                engineering.</li>
+                            <br>
+                            <li>Exam Preparation - Help for students preparing for exams.</li>
+                            <br>
+                            <li>Test Preparation - Help for students preparing for tests.</li>
+                            <br>
+                            <li>Homework Help - Assistance with assignments, homework, and projects.</li>
+                            <br>
+                            <li>Essay Writing - Help with essay writing in both English and French.</li>
+                            <br>
+                            <li>Summer Learning Plan - Support for students who want to get ahead or maintain learning
+                                during summer.</li>
+                            <br>
+                            <li>College and University Preparation - Skill-building for post-secondary education
+                                readiness.</li>
+                            <br>
+                            <li>Learning and Studying Coaching - Guidance on note-taking, organization, and study
+                                strategies.</li>
+                            <br>
+                            <li>STEM Program - Tutoring aimed towards students looking for general help or enrichment in
+                                all STEM fields.</li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!--container for the Google Charts pie chart-->
+    <div class="graph-section">
+        <div id="piechart"></div>
+    </div>
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

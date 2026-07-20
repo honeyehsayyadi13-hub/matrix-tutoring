@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page and documentation page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wiki Help Page">
+    <meta name="keywords" content="wiki, homepage, menu, help, information, user guide, guide">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>Wiki Help Page</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--style sheet geared towards the contact page but used for the wiki help page as well-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--company logo-->
+    <div class="img-flex">
+        <img src="../img/logo.svg" id="main-img" alt="company logo">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Wiki Help Page
+    </h1>
+        <!--subheading-->
+    <div class="centre-txt">
+        <p>This is the Matrix Tutoring Help Wiki. There are guides on how to perform certain actions on the website below by clicking the links.</p>
+    </div>
+
+
+    <!--step-by-step how to guide for using the website-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+                <p class="form-title">How to Install</p>
+                <ol>
+                    <li>You must ensure you have the following: a web browser, PHP, MySQL, Apache Web Server and AMPPS</li>
+                    <br>
+                    <li>Download the project folder "matrix_tutoring" and place it into the www directory in the Ampps folder.</li>
+                    <br>
+                    <li>Open AMPPS program to start Apache and MySQL. Ensure that they are running to proceed.</li>
+                    <br>
+                    <li>Open phpMyAdmin. It will run if AMPPS is running Apache and MySQL.</li>
+                    <br>
+                    <li>In phpMyAdmin, create a database with the name "company_db"</li>
+                    <br>
+                    <li>Select the newly made database and click "Import". Then choose the SQL file in the "matrix_tutoring" folder. Then click "Go".</li>
+                    <br>
+                    <li>Next, in a browser, go to "http://localhost/matrix_tutoring/index.html" to be sent to the home page.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../html/index.html" class="my-button">Back to Website</a>
+<!--links to each part of the wiki help page-->
+<div class="contact-info">
+   <p><strong>Home Wiki Help Page:</strong><a href="../html/wiki_help.html" alt="home page"> Click Here</a></p>
+   <p><strong>Front End Documentation Page:</strong><a href="../html/front_end.html" alt="front end documentation page"> Click Here</a></p>
+   <p><strong>End User Documentation Wiki Help: General Navigation:</strong><a href="../html/end_user_doc_wiki_1.html" alt="end user documentation page 1"> Click Here</a></p>
+   <p><strong>End User Documentation Wiki Help: Account Creation / Logging In:</strong><a href="../html/end_user_doc_wiki_2.html" alt="end user documentation page 2"> Click Here</a></p>
+   <p><strong>End User Documentation Wiki Help: Consultation Request:</strong><a href="../html/end_user_doc_wiki_3.html" alt="end user documentation page 3"> Click Here</a></p>
+    <p><strong>End User Documentation Wiki Help: Job Application:</strong><a href="../html/end_user_doc_wiki_4.html" alt="end user documentation page 4"> Click Here</a></p>
+    <p><strong>Admin Documentation Wiki Help: Admin Login and Navigation:</strong><a href="../html/admin_doc_wiki.html" alt="admin documentation page"> Click Here</a></p>
+    <p><strong>MySQL Documentation Wiki Help:</strong><a href="../html/db_wiki.html" alt="MySQL database documentation page"> Click Here</a></p>
+    <p><strong>PHP Documentation Wiki Help:</strong><a href="../html/php_wiki.html" alt="PHP documentation page"> Click Here</a></p>
+    <p><strong>Updating Content Instructions Wiki Help:</strong><a href="../html/update_instructions_wiki.html" alt="updating instructions page"> Click Here</a></p>
+</div>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

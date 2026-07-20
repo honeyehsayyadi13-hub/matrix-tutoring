@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page and documentation page 4-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="End User Documentation Job Applications">
+    <meta name="keywords" content="end user, documentation, description, guide, information, job, application">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>Job Applications</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Filling Out a Job Application Form
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>A guide for filling in the job application form.</p>
+    </div>
+    <!--step-by-step how to guide for submitting a job application-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ol>
+                <li>Open the Matrix Tutoring homepage, or <a href="../html/index.html">click here.</a></li>
+                <br>
+                <li>Use the navigation bar to find the following: "Apply Now", or <a href="../php/job_page.php">click here.</a></li>
+                <br>
+                <li>Fill in the following to submit an application: name, phone number, email (must be in an acceptible format: doc, pdf, docx), resume, and a message that describes what you are able to teach.</li>
+                <br>
+                <li>When done filling out the form, select the "Submit Request" button.</li>
+                <br>
+                <li>When the submission is successfully sent, the user is sent to a "Thank You" page where they can click buttons that either let them submit another form or redirects them to the home page.</li>
+            </ol>
+            </div>
+            
+        </div>
+    </div>
+    
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+    <!--button to take to the next guide-->
+    <a href="../html/admin_doc_wiki.html" class="my-button">Next Guide</a>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--Contact page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact the Company">
+    <meta name="keywords" content="contact, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>contact</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--style sheet geared towards the contact page-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+
+    <!--navigation bar is fixed to be at the top of the page and used in multiple pages-->
+    <div id="navbar">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../html/website_map.html">Map</a>
+        <a href="../html/FAQ.html">FAQ</a>
+        <!--drop down menu triggered when hovered on which lists all the services offered-->
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="../php/english_page.php">English</a></li>
+                <li><a href="../php/french_page.php">French</a></li>
+                <li><a href="../php/science_page.php">Biology/Chemistry/Physics</a></li>
+                <li><a href="../php/reading_writing_page.php">Reading & Writing</a></li>
+                <li><a href="../php/math_page.php">Math</a></li>
+                <li><a href="../php/coding_page.php">Coding</a></li>
+                <li><a href="../php/robotics_page.php">Robotics</a></li>
+                <li><a href="../php/history_page.php">History</a></li>
+                <li><a href="../php/geography_page.php">Geography</a></li>
+                <li><a href="../php/exam_test_page.php">Exam Preparation & Test Preparation</a></li>
+                <li><a href="../php/homework_page.php">Homework Help</a></li>
+                <li><a href="../php/essay_page.php">Essay Writing</a></li>
+                <li><a href="../php/summer_learning_page.php">Summer Learning Plan</a></li>
+                <li><a href="../php/college_university_page.php">College & University Preparation</a></li>
+                <li><a href="../php/learning_page.php">Learning and Studying Coaching</a></li>
+                <li><a href="../php/STEM_page.php">STEM Program</a></li>
+            </ul>
+        </div>
+        <!--php form pages and sign up/log in-->
+        <a href="../php/job_page.php">Apply Now</a>
+        <a href="../php/company_login.php">Company Account</a>
+        <a href="../php/register.php">Sign Up/Log In</a>
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <!--company logo-->
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <br><br>
+    <!--page heading-->
+    <h1 class="centre-txt-main">
+        Our Contact Information
+    </h1>
+    <!--text block that lists company contact information-->
+    <div class="contact-info">
+        <p><strong>Phone Number:</strong> 123-456-7890</p>
+        <p><strong>Address:</strong> 123 St, Windsor, Ontario</p>
+        <p><strong>Email:</strong> Email123@Email.com</p>
+        <p><strong>Hours:</strong>Mon–Fri: 4–8 p.m. Sat: 12-4 p.m. Sun: Closed</p>
+    </div>
+    <!--embedded Google Map that shows the location of the business, fit to be in the centre of the page-->
+    <div style="display:flex; justify-content:center; margin:40px 0;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2951.413668753165!2d-83.00313228814707!3d42.29103793933916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDE3JzI3LjciTiA4M8KwMDAnMDIuMCJX!5e0!3m2!1sen!2sca!4v1782092188936!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

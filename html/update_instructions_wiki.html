@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--wiki help page for php-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Update Instructions Wiki Help Page">
+    <meta name="keywords" content="update, instructions, guide, information">
+    <meta name="author" content="Honeyeh Sayyadi">
+    <title>update instructions</title>
+    <!--main site-wide stylesheet-->
+    <link rel="stylesheet" href="../css/pages_style.css">
+    <!--default theme is the light theme-->
+    <link id="theme-style" rel="stylesheet" href="../css/light.css">
+    <!--for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="background-look">
+    <!--users can switch between themes-->
+    <div id="navbar">
+        <!--theme switches through buttons, changeTheme() function in java_work.js swaps the theme using #theme-style-->
+        <button onclick="changeTheme('../css/light.css')">Light Mode</button>
+        <button onclick="changeTheme('../css/dark.css')">Dark Mode</button>
+        <button onclick="changeTheme('../css/pastel.css')">Pastel Mode</button>
+        <img src="../img/logo.svg" id="logo" width="70">
+    </div>
+    <!--heading-->
+    <h1 class="centre-txt-main">Update Instructions Wiki Help Page
+    </h1>
+    <!--subheading-->
+    <div class="centre-txt">
+        <p>This wiki page is for knowing how to update the contents of the images, video, and audio files. </p>
+    </div>
+    <!--documentation for the instructions for knowing how to update the contents of images, video, and audio files-->
+    <div class="form-box">
+        <div class="tape"></div>
+        <div class="form-rect">
+            <div class="text-color">
+            <ul>
+                <li>Images</li>
+                <li>To update the images:</li>
+                <li>1. Select the image and ensure the name matches the one that must be replaced.</li>
+                <li>2. Open the "matrix_tutoring" folder.</li>
+                <li>3. Place the image in the "img" folder, there is also a subfolder called "dark" for icons that are used for the dark mode theme. However, for general images, place them in the img folder.</li>
+                <li>4. Refresh the webpage.</li>
+                <br>
+                <li>Video</li>
+                <li>To update the video:</li>
+                <li>1. Select the video that will replace the previous one and ensure the name matches the former one.</li>
+                <li>2. Open the "matrix_tutoring" folder.</li>
+                <li>3. Place the video in the "vid" folder.</li>
+                <li>4. Refresh the webpage.</li>
+                <br>
+                <li>Audio</li>
+                <li>To update the audio:</li>
+                <li>1. Select the audio file and ensure the name matches the one that must be replaced.</li>
+                <li>2. Open the "matrix_tutoring" folder.</li>
+                <li>3. Place the audio file in the "aud" folder.</li>
+                <li>4. Refresh the webpage.</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!--button to take back to wiki help menu page-->
+    <a href="../html/wiki_help.html" class="my-button">Back to Home Page</a>
+    <br>
+
+    <!--JavaScript file that handles all JavaScript required portions for the pages-->
+    <script src="../js/java_work.js"></script>
+
+    <!--footer showed on all page-->
+    <footer>
+        <img src="../img/logo.svg" id="copyright" width="50" alt="Matrix Tutoring Logo">
+        <p>© 2026 Matrix Tutoring.</p>
+    </footer>
+
+</body>
+
+</html>

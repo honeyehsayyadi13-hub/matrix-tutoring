@@ -1,0 +1,4 @@
+LOG IN CREDENTIALS FOR COMPANY ACCOUNT:
+
+username:admin
+password:1234
