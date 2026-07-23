@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
 <h1 class="centre-txt-main">Coding Tutoring Service</h1>
 <!--image-->
     <div class="img-flex">
-        <img src="../img/coding.jpeg" id="main-img" alt="coding tutoring">
+        <img src="../img/coding.jpg" id="main-img" alt="coding tutoring">
     </div>
 <!--description-->
     <h2 class="centre-txt">Elementary students can be introduced to coding in this program. There is support for high school coding courses. We provide assistance with all programming languages, homework, and lessons.</h2>

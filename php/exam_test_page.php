@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
 <!--heading-->
 <h1 class="centre-txt-main">Test and Exam Preparation Tutoring Service</h1>
 <!--image-->
-<div class="img-flex"><img src="../img/test_exam.jpeg" id="main-img" alt="test and exam tutoring"></div>
+<div class="img-flex"><img src="../img/test_exam.jpg" id="main-img" alt="test and exam tutoring"></div>
 <!--description-->
 <h2 class="centre-txt">Geared towards high school students looking for help in preparing for tests or exams.</h2>
 <!--feedback form with ratings 1 through 5 stars, only one can be selected at a time-->

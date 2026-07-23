@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
 <!--heading-->
 <h1 class="centre-txt-main">Essay Writing Tutoring Service</h1>
 <!--image-->
-<div class="img-flex"><img src="../img/essay.png" id="main-img" alt="essay writing tutoring"></div>
+<div class="img-flex"><img src="../img/essay.jpg" id="main-img" alt="essay writing tutoring"></div>
 <!--description-->
 <h2 class="centre-txt">Aimed for students who need help with essay writing. We provide this service in both English and French.</h2>
 <!--feedback form with ratings 1 through 5 stars, only one can be selected at a time-->

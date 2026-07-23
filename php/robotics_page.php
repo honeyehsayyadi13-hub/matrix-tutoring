@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
 <!--heading-->
 <h1 class="centre-txt-main">Robotics Tutoring Service</h1>
 <!--image-->
-<div class="img-flex"><img src="../img/robotics.png" id="main-img" alt="robotics tutoring"></div>
+<div class="img-flex"><img src="../img/robotics.jpg" id="main-img" alt="robotics tutoring"></div>
 <!--description-->
 <h2 class="centre-txt">Designed for high school students interested in robotics and computer engineering.</h2>
 <!--feedback form with ratings 1 through 5 stars, only one can be selected at a time-->
