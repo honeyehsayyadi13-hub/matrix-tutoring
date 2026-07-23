@@ -1,18 +1,17 @@
 <?php
-//database connection settings for local server
-$servername="localhost";
-$username="root";
-$password="mysql";
-$database="company_db";
+//database connection settings for mywen server
+$host="localhost";
+$dbname="sayyadi_company_db";
+$username="sayyadi_company_db";
+$password="PbPBKsu4xtyZtW6cVTsw";
 
-try{
-    //creating a PDO connection with the above settings
-    $conn=new PDO("mysql:host=$servername;dbname=$database",$username,$password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try{//establishing PDO connection
+    $pdo= new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4",$username,$password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-}catch(PDOException $e){
-    //if the connection fails, a message is displayed
-    echo "Connection Failed" .$e->getMessage();
+}catch (PDOException $e){//if the connection failed then a message will appear
+    die("Database connection failed: " . $e->getMessage());
 }
+
 
 ?>
