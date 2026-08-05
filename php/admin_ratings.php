@@ -13,6 +13,8 @@ $totVotes=count($rates);
 <html lang="en-CA">
 <head>
     <title>Ratings</title>
+    <!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
     <!--main site-wide stylesheet-->
     <link rel="stylesheet" href="../css/pages_style.css">
     <!--style sheet geared towards the company pages-->

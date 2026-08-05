@@ -72,6 +72,8 @@ if(isset($_POST['submit'])){
     </div>
 <!--heading-->
 <h1 class="centre-txt-main">French Tutoring Service</h1>
+<!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
 <!--image-->
 <div class="img-flex"><img src="../img/french.jpg" id="main-img" alt="french tutoring"></div>
 <!--description-->

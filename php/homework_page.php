@@ -22,6 +22,8 @@ if(isset($_POST['submit'])){
     <meta name="keywords" content="homework, tutoring, information">
     <meta name="author" content="Honeyeh Sayyadi">
     <title>homework help</title>
+    <!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
     <!--main site-wide stylesheet-->
     <link rel="stylesheet" href="../css/pages_style.css">
     <!--default theme is the light theme-->

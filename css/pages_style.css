@@ -274,9 +274,17 @@ select{
 .my-button:hover{
     transform: scale(1.05);
 }
-/*pushes the menu down so it appears below the navagation bar**/
+/*pushes the menu down so it appears below the navagation bar and customization**/
 .dropdown-content{
-    top:50px;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:250px;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    z-index:10000;
 }
 
 /*navigation bar placement**/

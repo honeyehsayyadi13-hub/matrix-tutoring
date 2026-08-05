@@ -23,6 +23,8 @@ $user= $stmt->fetch(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
+    <!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
     <!--main site-wide stylesheet-->
     <link rel="stylesheet" href="../css/pages_style.css">
     <!--stylesheet for contact page but also used for the profile page-->

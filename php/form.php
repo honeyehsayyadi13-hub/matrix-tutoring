@@ -9,6 +9,8 @@ include("dbcon.php");
 <head>
     <meta charset="UTF-8">
     <title>consultation</title>
+    <!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
     <!--main site-wide stylesheet-->
     <link rel="stylesheet" href="../css/pages_style.css">
     <!--default theme is the light theme-->

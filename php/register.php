@@ -37,6 +37,8 @@ if(isset($_POST['login'])){
 <head>
     <meta charset="UTF-8">
     <title>register or log in</title>
+    <!--website icon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.svg">
     <!--main site-wide stylesheet-->
     <link rel="stylesheet" href="../css/pages_style.css">
     <!--stylesheet for about page but also used for the register page-->
